@@ -3,7 +3,7 @@
 	<is_smart>true</is_smart>
 	<criteria>
 		<criterion>
-			<name>Adobe AIR Version</name>
+			<name>Adobe AIR Version2</name>
 			<priority>0</priority>
 			<and_or>and</and_or>
 			<search_type>is not</search_type>
