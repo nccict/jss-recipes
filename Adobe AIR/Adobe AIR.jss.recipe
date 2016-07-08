@@ -11,13 +11,13 @@
 		<key>CATEGORY</key>
 		<string>Digital Media</string>
 		<key>GROUP_NAME</key>
-		<string>%NAME%-update-smart</string>
+		<string>NCC-%NAME%-update-smart2</string>
 		<key>GROUP_TEMPLATE</key>
 		<string>Adobe AIRSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>Adobe AIR</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>NCC Config</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
@@ -26,7 +26,7 @@
 		<string>Adobe AIR.png</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>0.4.0</string>
+	<string>0.6.0</string>
 	<key>ParentRecipe</key>
 	<string>com.github.autopkg.pkg.AdobeAIR</string>
 	<key>Process</key>
