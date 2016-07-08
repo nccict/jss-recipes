@@ -1,18 +1,21 @@
 <computer_extension_attribute>
-	<name>AIRVersion</name>
+	<name>Adobe AIR Version2</name>
 	<description />
 	<data_type>String</data_type>
 	<input_type>
 		<type>script</type>
 		<platform>Mac</platform>
-		<script>#!/bin/bash
-AIRVersion=""
-if [ -f /Library/Frameworks/Adobe\ AIR.framework/Resources/Info.plist ]
-	then
-		AIRVersion=$(defaults read /Library/Frameworks/Adobe\ AIR.framework/Resources/Info.plist CFBundleVersion)
+		<script>#!/bin/sh
+
+# Detects Adobe Air Version version
+
+if [ -f "/Library/Frameworks/Adobe AIR.framework/Resources/Info.plist" ] ; then
+	VERSION=$( defaults read /Library/Frameworks/Adobe\ AIR.framework/Resources/Info.plist CFBundleVersion )
+else
+	VERSION="Not installed."
 fi
 
-echo "&lt;result&gt;$AIRVersion&lt;/result&gt;"
+echo "<result>$VERSION</result>"
 
 exit 0</script>
 	</input_type>
